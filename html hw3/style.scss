@@ -130,9 +130,11 @@ a:hover img {
 .cap:active {
     color: antiquewhite;
 }
-.colortext {
-    &:focus { background-color: #e6e641;}
-   
+.color_input {
+    &:focus { 
+        background-color: #2b1469;
+        color: aquamarine;
+        }
     /* Цвет фона */
     color: #d40808;
     /* Цвет текста */
@@ -145,6 +147,29 @@ a:hover img {
     width: 70px;
     &:active {color: antiquewhite;}
 }
+.btnR{
+        &:focus { 
+        background-color: #f88dd8;
+        color: #161717;
+        }
+}
+.btnC{
+        &:focus { 
+        background-color: #20bf88;
+        color: #161717;
+        }
+}
+.gender {
+    &:hover { 
+        border: 1px dashed #4d4dc4;
+        box-sizing: content-box;
+}
+}
+
+
+
+
+
 
 /*
 {
