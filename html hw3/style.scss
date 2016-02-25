@@ -1,0 +1,153 @@
+.name_procedure {
+    font-family: fantasy;
+    font-size: 45px;
+    padding-left: 50%;
+    margin-bottom: 30px;
+}
+.name_procedure:first-letter {
+    color: red;
+}
+.name_procedure:hover {
+    text-decoration: underline;
+}
+.name_procedure2 {
+    /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body {
+    /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
+    /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.gallery {
+    /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(img/disco.jpg);
+    background-repeat: repeat;
+}
+ul li {
+    list-style-type: none;
+}
+#menu {
+    background: linear-gradient(#2222db 10%, #20baa3 40%, #278c9f 90%);
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
+}
+#menu:first-letter {
+    color: red;
+}
+#menu ul li:hover {
+    color: antiquewhite;
+}
+#menu ul li:hover:before {
+    content: "<<<";
+}
+#menu ul li:hover:after {
+    content: ">>>";
+}
+p span {
+    background: rgba(255, 0, 0, 0.3);
+}
+.catalog {
+    font-family: fantasy;
+    font-size: 25px;
+}
+.catalog ul li {
+    font-size: 15px;
+    display: inline-block;
+}
+.catalog list1 ul {
+    color: fuchsia;
+}
+.footer {
+    font-family: fantasy;
+    font-size: 15px;
+    text-align: center;
+    background: linear-gradient(#2222db 10%, #20baa3 40%, #278c9f 90%);
+    height: 40px;
+    padding-top: 20px;
+}
+h1 {
+    font-family: fantasy;
+    font-size: 45px;
+    padding-left: 50%;
+    margin-bottom: 30px;
+}
+h1:first-letter {
+    color: red;
+}
+h1:hover {
+    text-decoration: underline;
+}
+h2 {
+    text-decoration-color: blueviolet;
+    font-size: 20px;
+    padding-left: 5px;
+    color: coral;
+}
+.art1 {
+    color: #7e11c3;
+    background: rgba(250, 231, 231, 0.46);
+    text-decoration: none;
+}
+.art2 {
+    color: #7e11c3;
+    background: rgba(250, 231, 231, 0.46);
+    text-decoration: none;
+}
+.art3 {
+    color: #7e11c3;
+    background: rgba(250, 231, 231, 0.46);
+    text-decoration: none;
+}
+.new {
+    color: white;
+    background: red;
+    font-weight: 200;
+}
+a img {
+    border: 4px solid #d326bf;
+}
+a:hover img {
+    border: hidden;
+    /* Рамка при наведении на ссылку курсора мыши */
+}
+.cap {
+    margin-left: 40px;
+    width: 150px;
+    text-transform: capitalize;
+}
+.cap:active {
+    color: antiquewhite;
+}
+.colortext {
+    &:focus { background-color: #e6e641;}
+   
+    /* Цвет фона */
+    color: #d40808;
+    /* Цвет текста */
+    width: 70px;
+}
+
+
+.pass {
+    margin-left: 40px;
+    width: 70px;
+    &:active {color: antiquewhite;}
+}
+
+/*
+{
+}
+http://htmlbook.ru/faq/kak-izmenit-tsvet-teksta-i-fona-v-tekstovom-pole
+*/

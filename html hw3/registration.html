@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!--<link rel="stylesheet/less" href="main.less">--> 
+    <link rel="stylesheet" href="main.css">  
+    <title>Регистрация</title>
+</head>
+<body>
+    <div id="menu">
+       <ul>
+           <li><a href="index.html">Главная</a></li>
+           <li><a href="articles.html">Статьи</a></li>
+           <li><a href="catalog.html">Каталог</a></li>
+           <li><a href="gallery.html">Галерея изображений</a></li>
+           <li><a href="registration.html">Регистрация</a></li>
+           <li><a href="contacts.html">Контакты</a></li>
+       </ul>
+    </div> 
+    <hr> 
+   <h1>Регистрация</h1>
+       
+      <form action="file.py" method="post" enctype="multipart/form-data">
+          <div>
+          
+          <span>Фамилия <input class="cap" type="text" name="lastname"></span><br><br>
+          
+          Имя <input class="cap" type="text" name="firstname"><br><br>
+          Отчество <input class="cap" type="text" name="patronymic"><br><br>
+          
+          Добавьте фотографию <input type="file" name="yourPhoto"><br><br>
+          
+          <p>Адрес электронной почты <input class="colortext" type="email" name="email"></p><br><br>
+          
+          Пароль <input class="colortext" type="password" name="password"><br><br>
+          
+          Адрес сайта <input type="text" name="websait" placeholder="http://"><br><br>
+          
+          
+          <label for="sex">Пол</label>
+          <select name="sex" id="sex">
+              <option value="man">Man</option>
+              <option value="man">Woman</option>
+              
+          </select>
+          <br><br>
+          
+          
+           Дата рождения<input type="date" name="bdate"><br><br>
+           
+
+           <textarea name="message" id="aboutme" cols="30" rows="10">Enter some text here...</textarea><br>
+           
+    
+           
+           <input type="submit" name="reg" value="Очистить форму">
+           
+           <input type="submit" name="reg" value="Зарегистрироваться"><br><br>
+          
+          
+          
+          </div>
+      </form> 
+       
+<hr><div class="footer">© Pavel Co. Ltd. 2016</div>    
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>  
+</body>
+</html>
