@@ -173,11 +173,19 @@ h2 {
   color: antiquewhite;
 }
 
+.btnR {
+  background-color: #e2dbe0;
+  color: #161717;
+}
 .btnR:focus {
-  background-color: #f88dd8;
+  background-color: #fc7d7d;
   color: #161717;
 }
 
+.btnC {
+  background-color: #e2dbe0;
+  color: #161717;
+}
 .btnC:focus {
   background-color: #20bf88;
   color: #161717;
