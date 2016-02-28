@@ -142,17 +142,26 @@ h2 {
     &:active {color: antiquewhite;}
 }
 .btnR{
+        background-color: #e2dbe0;
+        color: #161717;
         &:focus { 
-        background-color: #f88dd8;
+        background-color: #fc7d7d;
         color: #161717;
         }
 }
-.btnC{
-        &:focus { 
-        background-color: #20bf88;
+
+.btnC {
+        background-color: #e2dbe0;
         color: #161717;
-        }
+        &:focus { 
+            background-color: #20bf88;
+            color: #161717;
+        }    
 }
+           
+
+
+
 .gender {
     &:hover { 
         border: 1px dashed #4d4dc4;
