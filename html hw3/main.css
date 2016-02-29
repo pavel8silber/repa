@@ -145,35 +145,32 @@ h2 {
 }
 
 .cap {
-  margin-left: 40px;
-  width: 150px;
+  margin-left: 3px;
+  width: 200px;
   text-transform: capitalize;
 }
-
 .cap:active {
   color: antiquewhite;
 }
 
-.color_input {
+.email_pass {
   /* ╨ª╨▓╨╡╤ג ╤ה╨╛╨╜╨░ */
   color: #d40808;
   /* ╨ª╨▓╨╡╤ג ╤ג╨╡╨║╤ב╤ג╨░ */
-  width: 70px;
+  width: 150px;
 }
-.color_input:focus {
+.email_pass:focus {
   background-color: #2b1469;
   color: aquamarine;
 }
 
-.pass {
-  margin-left: 40px;
-  width: 70px;
-}
 .pass:active {
   color: antiquewhite;
 }
 
 .btnR {
+  padding: 10px;
+  margin-left: 30px;
   background-color: #e2dbe0;
   color: #161717;
   -webkit-transition: 0.5s;
@@ -189,6 +186,8 @@ h2 {
 }
 
 .btnC {
+  padding: 10px;
+  margin-left: 40px;
   background-color: #e2dbe0;
   color: #161717;
   -webkit-transition: 0.5s;
@@ -217,10 +216,19 @@ h2 {
   margin: 2px;
 }
 
-/*
-{
+td {
+  padding: 3px;
+  margin: 3px;
+  border: 1px solid #716c6c;
 }
-http://htmlbook.ru/faq/kak-izmenit-tsvet-teksta-i-fona-v-tekstovom-pole
-*/
+
+#websait {
+  margin-left: 3px;
+  max-width: 200px;
+}
+
+table {
+  background: rgba(128, 128, 128, 0.29);
+}
 
 /*# sourceMappingURL=main.css.map */

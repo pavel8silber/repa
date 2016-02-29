@@ -4,12 +4,15 @@
     padding-left: 50%;
     margin-bottom: 30px;
 }
+
 .name_procedure:first-letter {
     color: red;
 }
+
 .name_procedure:hover {
     text-decoration: underline;
 }
+
 .name_procedure2 {
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
     background-image: url(img/bg.jpg);
@@ -17,6 +20,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 body {
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
@@ -25,6 +29,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .gallery {
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
     background-image: url(img/bg.jpg);
@@ -34,41 +39,52 @@ body {
     background-image: url(img/disco.jpg);
     background-repeat: repeat;
 }
+
 ul li {
     list-style-type: none;
 }
+
 #menu {
     background: linear-gradient(#2222db 10%, #20baa3 40%, #278c9f 90%);
     font-size: 20px;
     font-family: fantasy;
     color: black;
 }
+
 #menu:first-letter {
     color: red;
 }
+
 #menu ul li:hover {
     color: antiquewhite;
 }
+
 #menu ul li:hover:before {
     content: "<<<";
 }
+
 #menu ul li:hover:after {
     content: ">>>";
 }
+
 p span {
     background: rgba(255, 0, 0, 0.3);
 }
+
 .catalog {
     font-family: fantasy;
     font-size: 25px;
 }
+
 .catalog ul li {
     font-size: 15px;
     display: inline-block;
 }
+
 .catalog list1 ul {
     color: fuchsia;
 }
+
 .footer {
     font-family: fantasy;
     font-size: 15px;
@@ -77,39 +93,47 @@ p span {
     height: 40px;
     padding-top: 20px;
 }
+
 h1 {
     font-family: fantasy;
     font-size: 45px;
     padding-left: 50%;
     margin-bottom: 30px;
 }
+
 h1:first-letter {
     color: red;
 }
+
 h1:hover {
     text-decoration: underline;
 }
+
 h2 {
     text-decoration-color: blueviolet;
     font-size: 20px;
     padding-left: 5px;
     color: coral;
 }
+
 .art1 {
     color: #7e11c3;
     background: rgba(250, 231, 231, 0.46);
     text-decoration: none;
 }
+
 .art2 {
     color: #7e11c3;
     background: rgba(250, 231, 231, 0.46);
     text-decoration: none;
 }
+
 .art3 {
     color: #7e11c3;
     background: rgba(250, 231, 231, 0.46);
     text-decoration: none;
 }
+
 .new {
     color: white;
     background: red;
@@ -117,84 +141,91 @@ h2 {
 }
 
 .cap {
-    margin-left: 40px;
-    width: 150px;
+    margin-left: 3px;
+    width: 200px;
     text-transform: capitalize;
+    &:active {
+        color: antiquewhite;
+    }
 }
-.cap:active {
-    color: antiquewhite;
-}
-.color_input {
-    &:focus { 
+
+.email_pass {
+    &:focus {
         background-color: #2b1469;
         color: aquamarine;
-        }
+    }
     /* Цвет фона */
     color: #d40808;
     /* Цвет текста */
-    width: 70px;
+    width: 150px;
 }
 
-
-.pass {
-    margin-left: 40px;
-    width: 70px;
-    &:active {color: antiquewhite;}
+.pass {  
+    &:active {
+        color: antiquewhite;
+    }
 }
-.btnR{
-        background-color: #e2dbe0;
-        color: #161717;
-        transition: 0.5s;
-        &:hover { 
+
+.btnR {
+    padding: 10px;
+    margin-left: 30px;
+    background-color: #e2dbe0;
+    color: #161717;
+    transition: 0.5s;
+    &:hover {
         background-color: rgba(234, 170, 170, 0.62);
         color: #161717;
-        }
-        &:active {
+    }
+    &:active {
         background-color: #fc7d7d;
         color: #161717;
-        }
+    }
 }
 
 .btnC {
-        background-color: #e2dbe0;
-        color: #161717;
-        transition: 0.5s;
-        &:hover { 
+    padding: 10px;
+    margin-left: 40px;
+    background-color: #e2dbe0;
+    color: #161717;
+    transition: 0.5s;
+    &:hover {
         background-color: rgba(68, 222, 169, 0.58);
         color: #161717;
-        }
-        &:active { 
-            background-color: #20bf88;
-            color: #161717;
-        }    
+    }
+    &:active {
+        background-color: #20bf88;
+        color: #161717;
+    }
 }
-           
-
-
 
 .gender {
-    &:hover { 
+    &:hover {
         border: 1px dashed #4d4dc4;
         box-sizing: content-box;
+    }
 }
-}
-
 
 .img_border {
     border: 2px solid transparent;
     margin: 2px;
     &:hover {
-    border: 2px solid #dd22c7;
-    margin: 2px;
+        border: 2px solid #dd22c7;
+        margin: 2px;
     }
 }
 
-
-
-
-
-/*
-{
+td {
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid #716c6c;
 }
-http://htmlbook.ru/faq/kak-izmenit-tsvet-teksta-i-fona-v-tekstovom-pole
-*/
+
+#websait {
+        margin-left: 3px;
+    max-width: 200px;
+}
+
+table {
+    background: rgba(128, 128, 128, 0.29);
+}
+
