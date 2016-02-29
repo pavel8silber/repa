@@ -144,7 +144,12 @@ h2 {
 .btnR{
         background-color: #e2dbe0;
         color: #161717;
-        &:focus { 
+        transition: 0.5s;
+        &:hover { 
+        background-color: rgba(234, 170, 170, 0.62);
+        color: #161717;
+        }
+        &:active {
         background-color: #fc7d7d;
         color: #161717;
         }
@@ -153,7 +158,12 @@ h2 {
 .btnC {
         background-color: #e2dbe0;
         color: #161717;
-        &:focus { 
+        transition: 0.5s;
+        &:hover { 
+        background-color: rgba(68, 222, 169, 0.58);
+        color: #161717;
+        }
+        &:active { 
             background-color: #20bf88;
             color: #161717;
         }    

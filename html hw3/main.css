@@ -176,8 +176,14 @@ h2 {
 .btnR {
   background-color: #e2dbe0;
   color: #161717;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
 }
-.btnR:focus {
+.btnR:hover {
+  background-color: rgba(234, 170, 170, 0.62);
+  color: #161717;
+}
+.btnR:active {
   background-color: #fc7d7d;
   color: #161717;
 }
@@ -185,8 +191,14 @@ h2 {
 .btnC {
   background-color: #e2dbe0;
   color: #161717;
+  -webkit-transition: 0.5s;
+          transition: 0.5s;
 }
-.btnC:focus {
+.btnC:hover {
+  background-color: rgba(68, 222, 169, 0.58);
+  color: #161717;
+}
+.btnC:active {
   background-color: #20bf88;
   color: #161717;
 }
