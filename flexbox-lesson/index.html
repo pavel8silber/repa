@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Flexbox на практике</title>
+    <meta charset="utf-8">
+    <style>
+    body {
+            background: #fefefe;
+            margin: 0;
+            padding: 0;
+            font: 1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+            color: #272727;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            border: none;
+        }
+
+        .main {
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .bl {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            background: #fffde1;
+            border-radius: 3px;
+            margin: 20px;
+        }
+        /*--------------------------------------------------------------*/
+
+        .main {
+            display: flex;
+            height: 500px;
+
+/*            flex-direction: row-reverse;*/
+            /* Left to Right */
+            /*row-reverse | column-reverse |    направление элементов контейнера*/
+            justify-content: center;
+            /* flex-start(default) */
+            /* flex-end(элементы прижались к концу контейнера) */
+            /* :space-around по краям всех элементов (первый и последний тоже!)   USE */
+            /* :space-between пропуск только между элементами */
+            /* :center все блоки будут по центру оси */
+            align-items: stretch;
+            /* stretch (default) растягивается по поперечной оси, если у нас flex-direction: row --> тогда элементы растянутся по вертикали контейнера*/
+            /* :center элементы становятся по центру */
+            /* :flex-end элементы будут прижаты к концу попоречной оси */
+            /* :flex-start элементы будут выровнены ро началу попоречной оси */
+            /* :baseline выравнивает элементы относительно их базовый линии, Текст элементов на одной линии, даже если они разных размеров*/
+            max-width: 1000px;
+            /*чтобы блок мог становиться меньше по ширине */
+            margin: 20px auto;
+            /* выровнить по центру Контейнер*/
+
+
+/*            flex-wrap: wrap;*/
+            /*no new row of element | nowrap(default) не переносить на новую линию*/
+            /*new row of element | wrap переносить на новую линию*/
+            /*new row of element | wrap-reverse переносить на новую линию в обратном порядке*/
+            /* wrap НЕ УКАЗЫВАЕТ НАПРАВЛЕНИЕ ПОПЕРЧНОЙ ОСИ, А УКАЗЫВАЕТ ПЕРЕНОС СТРОКИ!*/
+
+
+
+            align-content: stretch; /*растяжка по перечной оси*/
+            /*space-around похоже на justify-content: только попоречной оси*/
+
+
+            flex-flow: row-reverse wrap;
+            /* Совмешяет в себе комбинацию двух свойств (flex-direction + flex-wrap) */
+
+
+
+        }
+
+        .bl {
+            height: 100px;
+            width: 250px; /* width of elements of the container*/
+/*            text-align: center;*/
+
+
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="bl fl1">1</div>
+        <div class="bl fl2">2</div>
+        <div class="bl fl3">3</div>
+        <div class="bl fl4">4</div>
+        <div class="bl fl5">5</div>
+        <div class="bl fl6">6</div>
+    </div>
+
+</body>
+
+</html>
