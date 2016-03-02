@@ -23,107 +23,171 @@
     <hr>
     <h1>Регистрация</h1>
 
-    
-
-<!--               <form action="#" method="post" enctype="multipart/form-data">-->
-               
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="firstname">Имя</label>
-                                </td>
-                                <td>
-                                    <input class="cap" type="text" name="firstname">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="lastname">Фамилия</label>
-                                </td>
-                                <td>
-                                    <input class="cap" type="text" name="lastname">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="lastname">Отчество</label>
-                                </td>
-                                <td>
-                                    <input class="cap" type="text" name="patronymic">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="yourPhoto">Добавьте фотографию</label>
-                                </td>
-                                <td>
-                                    <input type="file" name="yourPhoto">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="email">Адрес электронной почты</label>
-                                </td>
-                                <td>
-                                    <input class="email_pass" type="email" name="email">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="password">Пароль</label>
-                                </td>
-                                <td>
-                                    <input class="email_pass" type="password" name="password">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="websait">Адрес сайта</label>
-                                </td>
-                                <td>
-                                    <input id="websait" type="text" name="websait" placeholder="http://">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="gender">Пол</label>
-                                </td>
-                                <td>
-                                    <span class="gender"><input  type="radio" name="gender" value="male">Мужчина</span>
-                                    <br>
-                                    <span class="gender"><input  type="radio" name="gender" value="female">Женшина</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="websait">Дата рождения</label>
-                                </td>
-                                <td>
-                                    <input type="date" name="bdate">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <textarea name="message" id="aboutme" cols="53" rows="5">Enter some text here...</textarea>
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>
-                                    <input class="btnR" href="#" type="submit" name="reg" value="Очистить форму">
-                                </td>
-                                <td>
-                                    <input class="btnC" href="#" type="submit" name="reg" value="Зарегистрироваться">
-                                </td>
-                            </tr>
-<!--                            </form>-->
-            </table>
-                
 
 
 
-    <div class="footer">© Pavel Co. Ltd. 2016</div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+    <!--
+    <table>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <tr>
+                <td>
+                    <label for="firstname">Имя</label>
+                </td>
+                <td>
+                    <input class="cap" type="text" name="firstname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">Фамилия</label>
+                </td>
+                <td>
+                    <input class="cap" type="text" name="lastname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">Отчество</label>
+                </td>
+                <td>
+                    <input class="cap" type="text" name="patronymic">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="yourPhoto">Добавьте фотографию</label>
+                </td>
+                <td>
+                    <input type="file" name="yourPhoto">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Адрес электронной почты</label>
+                </td>
+                <td>
+                    <input class="email_pass" type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Пароль</label>
+                </td>
+                <td>
+                    <input class="email_pass" type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="websait">Адрес сайта</label>
+                </td>
+                <td>
+                    <input id="websait" type="text" name="websait" placeholder="http://">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Пол</label>
+                </td>
+                <td>
+                    <span class="gender"><input  type="radio" name="gender" value="male">Мужчина</span>
+                    <br>
+                    <span class="gender"><input  type="radio" name="gender" value="female">Женшина</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="websait">Дата рождения</label>
+                </td>
+                <td>
+                    <input type="date" name="bdate">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="message" id="aboutme" cols="53" rows="5">Enter some text here...</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input class="btnR" href="#" type="submit" name="reg" value="Очистить форму">
+                </td>
+                <td>
+                    <input class="btnC" href="#" type="submit" name="reg" value="Зарегистрироваться">
+                </td>
+            </tr>
+        </form>
+    </table>
+-->
+
+    <div class="registarion">
+        <div class="block item1">
+            <label for="firstname">Имя</label>
+        </div>
+        <div class="block item2">
+            <input class="cap" type="text" name="firstname">
+        </div>
+        <div class="block item3">
+            <label for="lastname">Фамилия</label>
+        </div>
+        <div class="block item4">
+            <input class="cap" type="text" name="lastname">
+        </div>
+        <div class="block item5">
+            <label for="lastname">Отчество</label>
+        </div>
+        <div class="block item6">
+            <input class="cap" type="text" name="patronymic">
+        </div>
+        <div class="block item7">
+            <label for="yourPhoto">Добавьте фотографию</label>
+        </div>
+        <div class="block item8">
+            <input type="file" name="yourPhoto">
+        </div>
+        <div class="block item9">
+            <label for="email">Адрес электронной почты</label>
+        </div>
+        <div class="block item10">
+            <input class="email_pass" type="email" name="email">
+        </div>
+        <div class="block item11">
+            <label for="password">Пароль</label>
+        </div>
+        <div class="block item12">
+            <input class="email_pass" type="password" name="password">
+        </div>
+        <div class="block item13">
+            <label for="websait">Адрес сайта</label>
+        </div>
+        <div class="block item14">
+            <input id="websait" type="text" name="websait" placeholder="http://">
+        </div>
+        <div class="block item15">
+            <label for="gender">Пол</label>
+        </div>
+        <div class="block item16"><span class="gender"><input  type="radio" name="gender" value="male">Мужчина</span>
+            <br>
+            <span class="gender"><input  type="radio" name="gender" value="female">Женшина</span></div>
+        <div class="block item17"><label for="websait">Дата рождения</label></div>
+        <div class="block item18"><input type="date" name="bdate"></div>
+        <div class=" item19"><textarea name="message" id="aboutme" cols="53" rows="5">Enter some text here...</textarea></div>
+        <div class=" item20"><input class="btnR" href="#" type="submit" name="reg" value="Очистить форму"></div>
+        <div class=" item21"><input class="btnC" href="#" type="submit" name="reg" value="Зарегистрироваться"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">  &pi;&alpha;&beta;&isin; &Lambda; 2016</div>
 </body>
 
 </html>

@@ -51,21 +51,20 @@ ul li {
     color: black;
 }
 
-#menu:first-letter {
-    color: red;
+#menu {
+
+}
+#menu ul li a:hover {
+    color: #23f272;
 }
 
-#menu ul li:hover {
-    color: antiquewhite;
-}
-
-#menu ul li:hover:before {
-    content: "<<<";
-}
-
-#menu ul li:hover:after {
-    content: ">>>";
-}
+//#menu ul li:hover:before {
+//    content: "<<<";
+//}
+//
+//#menu ul li:hover:after {
+//    content: ">>>";
+//}
 
 p span {
     background: rgba(255, 0, 0, 0.3);
@@ -89,7 +88,7 @@ p span {
     font-family: fantasy;
     font-size: 15px;
     text-align: center;
-    background: linear-gradient(#2222db 10%, #20baa3 40%, #278c9f 90%);
+    background: linear-gradient(#48f548 10%, #efef1e 40%, red 90%);
     height: 40px;
     padding-top: 20px;
 }
@@ -160,7 +159,7 @@ h2 {
     width: 150px;
 }
 
-.pass {  
+.pass {
     &:active {
         color: antiquewhite;
     }
@@ -200,7 +199,7 @@ h2 {
 
 .gender {
     &:hover {
-        border: 1px dashed #4d4dc4;
+        border: 1px dashed #f23020;
         box-sizing: content-box;
     }
 }
@@ -229,3 +228,30 @@ table {
     background: rgba(128, 128, 128, 0.29);
 }
 
+.registarion {
+    background: rgba(128, 128, 128, 0.29);
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #b7b2b2;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.block {
+    width: 240px;
+    border-bottom: 0.5px solid #5f5f5f;
+    border-right: 0.5px dashed #777575;
+    height: 40px;
+    text-align: left;
+}
+.item19 {
+    width: 400px;
+}
+.item20 {
+    width: 240px;
+    border-right: 0.5px dashed #777575;
+}
