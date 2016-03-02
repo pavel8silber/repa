@@ -1,0 +1,141 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Flexbox на практике Index2</title>
+    <meta charset="utf-8">
+    <style>
+    body {
+            background: #fefefe;
+            margin: 0;
+            padding: 0;
+            font: 1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+            color: #272727;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            border: none;
+        }
+
+        .main {
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background: #fff;
+            border-radius: 3px;
+        }
+
+        .bl {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            background: #fffde1;
+            border-radius: 3px;
+            margin: 20px;
+        }
+        /*--------------------------------------------------------------*/
+
+        .main {
+            display: flex;
+/*            height: 500px;*/
+            /*            flex-direction: row-reverse;*/
+            /* Left to Right */
+            /*row-reverse | column-reverse |    направление элементов контейнера*/
+            justify-content: center;
+            /* flex-start(default) */
+            /* flex-end(элементы прижались к концу контейнера) */
+            /* :space-around по краям всех элементов (первый и последний тоже!)   USE */
+            /* :space-between пропуск только между элементами */
+            /* :center все блоки будут по центру оси */
+            align-items: stretch;
+            /* stretch (default) растягивается по поперечной оси, если у нас flex-direction: row --> тогда элементы растянутся по вертикали контейнера*/
+            /* :center элементы становятся по центру */
+            /* :flex-end элементы будут прижаты к концу попоречной оси */
+            /* :flex-start элементы будут выровнены ро началу попоречной оси */
+            /* :baseline выравнивает элементы относительно их базовый линии, Текст элементов на одной линии, даже если они разных размеров*/
+            max-width: 1000px;
+            /*чтобы блок мог становиться меньше по ширине */
+            margin: 20px auto;
+            /* выровнить по центру Контейнер*/
+            /*            flex-wrap: wrap;*/
+            /*no new row of element | nowrap(default) не переносить на новую линию*/
+            /*new row of element | wrap переносить на новую линию*/
+            /*new row of element | wrap-reverse переносить на новую линию в обратном порядке*/
+            /* wrap НЕ УКАЗЫВАЕТ НАПРАВЛЕНИЕ ПОПЕРЧНОЙ ОСИ, А УКАЗЫВАЕТ ПЕРЕНОС СТРОКИ!*/
+            align-content: stretch;
+            /*растяжка по перечной оси*/
+            /*space-around похоже на justify-content: только попоречной оси*/
+            flex-flow: row wrap;
+            /* Совмешяет в себе комбинацию двух свойств (flex-direction + flex-wrap)    USE*/
+/*            padding: 0;*/
+        }
+
+        .bl {
+            /*            height: 100px;*/
+            /*            width: 250px;       width of elements of the container*/
+            /*            text-align: center;*/
+            /*            p0+m0+bd0*/
+/*
+            padding: 0;
+            margin: 0;
+            border: 0;
+*/
+
+            flex-basis: 100px;
+            /* :auto (default) Высчитывается из контента элементов */
+            /* :100px задаем ширину(если row) элементам контейнера  */
+
+            flex-grow: 1; /* flex-grow напрямую зависит от flex-basis*/
+            /* flex-grow узакыват на жадность элемента отнасительно свободного пространства */
+
+/*
+            Ширина 500px, базисная ширина каждого элемента по 100px, свободное пространство 300пк
+            У нас всего 2 элемента, первому даем flex-grow: 3; второму даем flex-grow: 2; это
+            значит свободное пространство делим на 5 частей (3+2) получается 300/5 = 60 пикселей !
+            Первый элемент получит 3 части * 60 + 100(flex-basis: 100px;) = 280px Первый элемент
+            Второй элемент получит 2 части * 60 + 100(flex-basis: 100px;) = 220px Второй элемент
+
+            flex-grow !!! Работает если только есть свободное пространство!
+*/
+
+            flex-shrink: 1; /* 1 (Default), 0 = no shrink*/
+/*          flex-shrink Это антипод  flex-grow, указывает на то сколько элемент будет
+            отдовать личного пространства если свободного не хватает.
+*/
+
+
+            flex: 1 1 200px;   /* flex: grow shrink basis */
+
+
+
+        }
+
+        .fl1 {background: #79eaef; border-color: #33646a;}
+        .fl2 {background: #6abc6d; border-color: #2f737c;}
+        .fl3 {background: #dda8e2; border-color: #80086d;}
+        .fl4 {background: #f0c2cb; border-color: #c91212;}
+        .fl5 {background: #ebc7a3; border-color: #765610;}
+        .fl6 {background: #e1ceff; border-color: #aa0cf0;}
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="bl fl1">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima provident reprehenderit, perspiciatis voluptatem sint quis doloremque aliquid et ea.</div>
+        <div class="bl fl2">2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minima provident reprehenderit, perspiciatis voluptatem sint quis doloremque aliquid et ea.</div>
+
+        <div class="bl fl3">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa quidem, assumenda harum sed molestiae quos ad esse tempora eius.</div>
+        <div class="bl fl4">4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur provident et, quisquam facere assumenda quidem impedit velit aut veritatis?</div>
+        <div class="bl fl5">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, blanditiis, provident! A modi sed ipsum placeat itaque nam, blanditiis distinctio.</div>
+        <div class="bl fl6">6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque placeat animi vitae eius sint porro quo est odio ex ullam.</div>
+
+    </div>
+
+</body>
+
+</html>
