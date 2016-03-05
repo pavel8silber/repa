@@ -255,3 +255,14 @@ table {
     width: 240px;
     border-right: 0.5px dashed #777575;
 }
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.block-gallery {
+    width: 250px;
+}
