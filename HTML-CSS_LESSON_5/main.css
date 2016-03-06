@@ -1,0 +1,130 @@
+body {
+    height: 3000px;
+}
+span {
+    text-decoration: underline;
+    margin-left: 20px;
+}
+.container {
+    margin: 30px;
+    text-align: center;
+    background: #ccc;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    z-index: 0;
+}
+.block1 {
+    text-align: center;
+    background: #fcb4d8;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 1;
+}
+.block2 {
+    text-align: center;
+    background: #d8a3f8;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 110px;
+    left: 90px;
+    z-index: 1;
+}
+.block3 {
+    text-align: center;
+    background: #f8bf54;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 90px;
+    left: 315px;
+    z-index: 5;
+
+}
+.container4 {
+    margin: 30px;
+    text-align: center;
+    background: #ccc;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    z-index: 0;
+}
+.container5 {
+    margin: 30px;
+    text-align: center;
+    background: #ccc;
+    height: 101px;
+    width: 300px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.block3 {
+    text-align: center;
+    background: #f2a0cc;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    left: 215px;
+    z-index: 1;
+    border-radius: 30px;
+}
+.container6 {
+    margin: 30px;
+    text-align: center;
+    background: #ccc;
+    height: 101px;
+    width: 250px;
+    position: relative;
+    z-index: 0;
+    overflow: scroll;
+}
+.container7 {
+    margin: 30px;
+    text-align: center;
+    background: #ccc;
+    height: 101px;
+    width: 300px;
+    position: relative;
+    z-index: 0;
+    overflow: scroll;
+}
+.container8 {
+    margin: 30px;
+    text-align: center;
+    background: #ccc;
+    height: 101px;
+    width: 300px;
+    position: relative;
+    z-index: 0;
+    overflow-y: hidden;
+}
+}
+.container9 {
+    margin: 30px;
+    text-align: left;
+    background: #ccc;
+    height: 101px;
+    width: 300px;
+    position: relative;
+    z-index: 0;
+    overflow-y: hidden;
+    display: none;
+}
+.block4 {
+    text-align: center;
+    background: #f81989;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 1;
+    display: none; /*display none!!!*/
+}
