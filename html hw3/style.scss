@@ -1,4 +1,4 @@
-.name_procedure {
+.name_procedure {                /*PRIMISI*/
     font-family: fantasy;
     font-size: 45px;
     padding-left: 50%;
@@ -15,7 +15,7 @@
 
 .name_procedure2 {
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
-    background-image: url(img/bg.jpg);
+    background-image: url(img/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,19 +24,19 @@
 body {
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
-    background-image: url(img/bg.jpg);
+    background-image: url(img/bg2.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
 }
 
 .gallery {
     /* background: linear-gradient(#fff 20%, #f00 50%, #0f0 100%); */
-    background-image: url(img/bg.jpg);
+    background-image: url(img/bg2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(img/disco.jpg);
+    background-image: url(img/bg2.jpg);
     background-repeat: repeat;
 }
 
@@ -261,7 +261,7 @@ table {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+
 }
 .block-gallery {
     width: 250px;
