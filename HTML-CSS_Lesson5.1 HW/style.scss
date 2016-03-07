@@ -1,0 +1,39 @@
+.container {
+    width: 880px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background: #fff4ce;
+}
+.block {
+    padding: 10px;
+    margin: 10px;
+    width: 130px;
+    height: 150px;
+    float: left;
+    text-align: center;
+    border: 1px solid transparent;
+    &:hover {
+        border: 1px solid black;
+    }
+
+    a {
+        display: block;
+        background: rgb(255, 0, 29);
+        color: #ffffff;
+        height: 40px;
+        padding: 10px 0px 0px 0px ;
+        margin: 10px 0px 0px 0px ;
+        &:hover {
+        background: #fcf667;
+        color: rgb(29, 5, 8);
+    }
+
+    }
+    img {
+        display: block;
+        align-content: center;
+        padding: 10px 10px 10px 27px;
+        marging: 10px 10px 10px 27px;
+    }
+}
