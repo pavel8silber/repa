@@ -1,0 +1,44 @@
+body {
+    background: url(http://images.inmagine.com/400nwm/imagezoo/izs015/izs015008.jpg);
+}
+.container {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 40px;
+    background: #999;
+    overflow: hidden; /* hide corners*/
+    position: relative;
+    cursor: pointer;
+
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+
+/*    background: -moz-linear-gradient(#333, #bbb);*/
+/*    background: -webkit-linear-gradient(45deg, #333, #bbb);*/
+/*    background: linear-gradient(-45deg, #333, #bbb);*/
+/*    background: linear-gradient(right, #333, #bbb);*/
+/*    background: linear-gradient(right top, #333, #bbb);*/
+/*    Градиент всегда направлен к центру контейнера*/
+/*    background: linear-gradient(40% 10%, #333, #bbb);*/
+/*    background: linear-gradient(60% 10%, #333 0%, #bbb 100%);*/
+/*    background: -webkit-radial-gradient(center, green 10%, #aaa 30%, #333 70%, #bbb 100%);*/
+}
+
+.container {
+    content: '';
+    width: 400px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+
+    -webkit-transition: opacity: .3s;
+
+    background: -webkit-radial-gradient(transparent, rgba(0,0,0,.7));
+}
+
+.container:hover::after {
+    opacity: 0;
+}
