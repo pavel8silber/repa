@@ -1,0 +1,420 @@
+@require '../bower_components/normalize.styl/normalize.styl'
+@require '../bower_components/Font-Awesome-Stylus/stylus/index.styl'
+@require '../bower_components/rupture-by-jenius/rupture/index.styl'
+
+/* желательные опции */
+*
+    box-sizing border-box
+    position relative
+
+h1, h2, h3, h4, h5, h6
+    margin 0
+
+/* собираем все цвета */
+
+active-color=#dd2a24
+promoted-color=#f8cd53
+work-color=#f35e59
+facebook-color=#1287bf
+passive-color=#2a2a2a
+alter-passive-color=#515151
+main-info-color=#424242
+
+form-pad=40px
+std-border-radius=4px
+
+body
+    font-family HelveticaNeue
+    font-size 13.5px
+    color main-info-color
+input[type="text"]
+    display block
+    width 80%
+    margin 0 auto
+    font 400 14px / 60px Helvetica
+    padding 0 15px
+    margin-bottom 10px
+    border-radius std-border-radius
+    border 1px solid #828282
+    color #828282
+input[type="submit"]
+    margin-top form-pad
+    border none
+
+.content
+    max-width 1024px
+    margin 0 auto
+    padding 0 10px
+
+.lp-section
+    width 100%
+
+.info-section
+    padding 101px 0
+
+.second-title
+.second-desc
+    text-align center
+
+.second-title
+    font-size 36px
+    line-height 40px
+.third-desc
+.second-desc
+    font-size 20px
+    line-height 26px
+.second-desc:after
+    content ''
+    width 47px
+    height 5px
+    background-color main-info-color
+    display block
+    margin 14px auto 0
+
+/* раздел – маленькое меню */
+.top-menu-section
+    height 42px
+    background-color #f0f2f4
+
+/* раздел – основной хедер */
+.header-section
+    background-color white
+    height 131px
+    padding: 25px 0px;
+    .content
+        text-align right
+        padding 10px
+        > *
+            display inline-block
+            vertical-align middle
+
+.main-logo
+    position absolute
+    left 0
+    cursor pointer
+    &__image
+        font 400 57px FontAwesome
+        color active-color
+        margin-right 10px
+        transition color .3s
+    &__title
+        font-size 28px
+    &__desc
+        font-size 15px
+    > *
+        display inline-block
+        vertical-align top
+    .right-wrapper
+        max-width 250px
+    &:hover &__image
+        color facebook-color
+
+.main-menu
+    font: 700 15px HelveticaNeue;
+    padding: 17px 0px;
+    &__item
+        cursor pointer
+        display inline-block
+        vertical-align middle
+        size-point=5px
+        margin-right: 6px;
+        transition all .3s
+        &:after
+            content '•'
+            margin-left 10px
+        &:last-child:after
+            content ''
+        &:hover
+        &.active
+            color active-color
+
+.promoted-button
+    cursor pointer
+    font: 700 15px HelveticaNeue;
+    color white
+    min-width 171px
+    padding 0 23px
+    text-align center
+    border-radius std-border-radius
+    height 36px
+    line-height @height
+    background-color active-color
+    display inline-block
+    margin-left 32px
+
+/* раздел – заходной слайд */
+.face-section
+    background alter-passive-color url(images/Layer-32.png) no-repeat fixed center
+    background-size cover
+    height 590px
+    color white
+    .content
+        top 50%
+        transform translate(0, -50%)
+        text-align center
+        > *
+            text-align center
+    .promoted-button
+        min-width 330px
+        height 69px
+        line-height @height
+        background-color promoted-color
+        font-size 23.2px
+        text-transform uppercase
+        margin-top 32px
+.face-title
+    font-size 48px
+    font-weight bold
+.face-desc
+    font-size 30px
+    font-weight 300px
+
+/* раздел – о нас */
+.about-features
+    font-size 0
+.about-features
+    margin-top 45px
+.about-feature
+    width (100%/3)
+    display inline-block
+    vertical-align top
+    text-align center
+    padding 0 40px
+    &__title
+        margin 28px 0 14px
+        font-size 22px
+        line-height 26px
+    &__desc
+        font-size 13.5px
+        line-height 22px
+
+    +below(700px)
+        width (100%/2)
+        &:last-child
+            display none
+
+/* раздел – наш подход */
+.our-approch-section
+    background-color #f3f3f3
+.approches
+    margin-top 45px
+.approch
+    block-height=236px
+    photo-width=339px
+    badge-size=101px
+    font-size 0
+    border-radius 3px
+    margin-bottom 40px
+    box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75)
+    &:last-child
+        margin-bottom 0
+    &__image
+        background alter-passive-color url('../images/road_webinar_photo.jpg') no-repeat center
+        width photo-width
+        height block-height
+        float left
+    &__title
+        font-weight bold
+        font-size 18px
+        line-height 26px
+    &__desc
+        color #5c5c5c
+        font-family OpenSans
+        font-size 13.5px
+        line-height 22px
+    &__badge
+        width badge-size
+        height badge-size
+        text-align center
+        display table-cell
+        vertical-align middle
+        border-radius std-border-radius
+        background-color active-color
+        border 2px solid white
+        position absolute
+        left 0
+        top 50%
+        transform: translate(-50%, -50%);
+    &__number
+        font 700 60px / 65px Georgia;
+        color white
+        &-desc
+            font 400 20px / 21px Helvetica
+            color white
+    .info-wrapper
+        height block-height
+        margin-left photo-width
+        background-color white
+        padding 71px 80px
+    &:after
+        content ''
+        clear both
+        height 0
+        visibility hidden
+        display block
+    &:hover &__image
+        background-size 105%
+    &_right &__image
+        float right
+    &_right &__badge
+        left initial
+        right 0
+        transform translate(50%, -50%)
+    &_right .info-wrapper
+        margin-left 0
+        margin-right photo-width
+        text-align right
+/* раздел – наша работа */
+.our-work-section
+    background-color active-color
+    color white
+    .second-desc:after
+        background-color white
+
+.projects
+    margin-top 38px
+    font-size 0
+    &:after
+        content ''
+        clear both
+        height 0
+        visibility hidden
+        display block
+.project
+    width (100%/4)
+    float left
+    height 251px
+    background-color #f35e59
+    &_photo
+        background url('../images/road_webinar_photo.jpg') no-repeat center
+        background-size cover
+    &__icon
+        font 400 36px FontAwesome
+        opacity .5
+        color white
+    &__title
+        font-size 26px
+        font-weight bold
+    &__desc
+        font-size 16px
+    &__text
+        text-align center
+        top 50%
+        transform translate(0, -50%)
+/* раздел – аналитический слайд */
+.analysis-section
+    background-color facebook-color
+    color white
+    text-align center
+.scroll-down-button
+    cursor pointer
+    width 64px
+    height @width
+    border-radius 50%
+    display inline-block
+    margin 15px auto 0
+    border 2px solid white
+    background url('../images/Shape-12.png') no-repeat center
+.submit-form
+    font-size 0
+    &:before
+        content ''
+        display inline-block
+        margin 22px auto 0
+        width: 0;
+        height: 0;
+        border-left: 32px solid transparent
+        border-right: 32px solid transparent
+        border-bottom: 32px solid white
+    &__content
+        max-width 683px
+        background-color white
+        margin 0 auto
+        padding 68px
+        border-radius std-border-radius
+    &__desc
+        color#828282
+        font 400 15px / 22px Helvetica
+        margin-bottom form-pad
+    &__cross
+        cursor pointer
+        position absolute
+        font-size 22px
+        width 45px
+        height @width
+        line-height @width
+        border-radius 50%
+        border 2px solid white
+        background-color active-color
+        color white
+        text-align center
+        top 0
+        right 0
+        transform translate(50%, -50%)
+    .promoted-button
+        height 49px
+        line-height @height
+        margin-left 0
+
+/* раздел – контакты */
+social-border=2px solid alter-passive-color
+.get-in-touch-section
+    background-color passive-color
+    color white
+    text-align center
+    .third-desc
+        color #cecece
+    .promoted-button
+        background-color transparent
+        border social-border
+        height 59px
+        line-height @height
+        display inline-block
+        margin-left 0
+        transition background-color .3s
+        &:hover
+            background-color alter-passive-color
+    input[type="text"]
+        margin-top 31px
+        max-width 683px
+        background-color alter-passive-color
+        border none
+        transition all .3s
+        outline none
+        &:focus
+            background-color white
+
+.social-menu
+    font 400 22px FontAwesome
+    text-align center
+    margin 29px 0 36px
+    &__item
+        width 49px
+        display inline-block
+        vertical-align middle
+        margin-right 20px
+        height @width
+        border-radius std-border-radius
+        border social-border
+        line-height @width
+        text-align center
+        cursor pointer
+        transition all .4s
+        &:last-child
+            margin-right 0
+        &:hover
+            border-color active-color
+            color @border-color
+/* футер */
+.footer-section
+    background-color alter-passive-color
+    text-align center
+    padding 10px 0
+    color white
+    .third-desc
+        font-size 14px
+
+
+
+
+
