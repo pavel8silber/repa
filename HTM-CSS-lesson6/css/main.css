@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 1em Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: augustatwo;
+  src: url("../fonts/augustatwo.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: augustatwo;
+  src: url("../fonts/augustatwo.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: SEASRN__;
+  src: url("../fonts/SEASRN__.ttf");
+  font-weight: normal;
+}
+.lp-section {
+  width: 100%;
+}
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.header-section {
+  background-color: #79bbbb;
+  height: 260px;
+  text-transform: uppercase;
+  font-family: augustatwo, Arial;
+  font-size: 2.4em;
+}
+.header-main-menu__item {
+  background-color: #79bbbb;
+  height: 260px;
+  text-transform: uppercase;
+  font-family: augustatwo, Arial;
+  font-size: 2.4em;
+  font-weight: bold;
+}
+.slider-section {
+  background-color: #79bbbb;
+  height: 1827px;
+}
+.slider-main-title {
+  background-color: #79bbbb;
+  text-transform: uppercase;
+  font-family: SEASRN__, Arial;
+  font-size: 5.4em;
+  height: 100px;
+  padding: 50%;
+  margin: 50% auto;
+  text-shadow: 0 3px o #fff;
+  color: #fff;
+}
+.about-section {
+  background-color: #ddd8c8;
+  height: 1605px;
+}
+.portfolio-section {
+  background-color: #e18a68;
+  height: 1696px;
+}
+.blog-section {
+  background-color: #dad5c5;
+  height: 2104px;
+}
+.contact-section {
+  background-color: #4c5055;
+  height: 1646px;
+}

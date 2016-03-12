@@ -1,4 +1,6 @@
 {
-    "name": "HTM-CSS-lesson6",
-    "dependencies": {}
+  "name": "HTM-CSS-lesson6",
+  "dependencies": {
+    "normalize-stylus": "*"
+  }
 }
