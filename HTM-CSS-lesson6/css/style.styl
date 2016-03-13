@@ -1,80 +1,122 @@
-main-color = #79BBBB
-about-color = #DDD8c8 
-portfolio-color = #E18A68
-blog-color = #DAD5C5 
-contact-color = #4C5055 
+@require '../bower_components/normalize.styl/normalize.styl'
+@require '../bower_components/Font-Awesome-Stylus/stylus/index.styl'
+@require '../bower_components/rupture-by-jenius/rupture/index.styl'
 
-body
-    margin 0
-    padding 0
-    font 1em Arial, Helvetica, sans-serif
+main-color = #79BBBB
+about-color = #DDD8c8
+portfolio-color = #E18A68
+blog-color = #DAD5C5
+contact-color = #4C5055
+
 
 @font-face                          /* @font-face test */
     font-family augustatwo
     src url(../fonts/augustatwo.ttf)
     font-weight normal
-    
+
 @font-face                          /* @font-face test */
     font-family augustatwo
     src url(../fonts/augustatwo.woff2)
     font-weight bold
-    
+
 @font-face                          /* @font-face test */
     font-family SEASRN__
     src url(../fonts/SEASRN__.ttf)
     font-weight normal
 
 
+body
+    margin 0
+    padding 0
+    font 1em Arial, Helvetica, sans-serif
+    color main-color
+
 .lp-section
     width 100%
 
-.content
-    max-width 1024px
-    margin 0 auto
-    
-.header-section                     /* @font-face test */
-    background-color main-color
-    height 260px
-    text-transform uppercase
-    font-family augustatwo, Arial       
-    font-size 2.4em
-    
-.header-main-menu__item
-    background-color main-color
-    height 260px
-    text-transform uppercase
-    font-family augustatwo, Arial       
-    font-size 2.4em
-    font-weight bold
 
+/* ------------ header-section -----------------------*/
+
+.header-section
+//    position relative
+    background url(../images/HeaderBG.png)
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    max-width: 2800px;
+    height: 260px;
+
+
+#menu-logo                  /*OK*/
+//    position absolute
+    font-family: SEASRN__
+    color: #f6edd8
+    font-size: 188px
+    left 50%
+    top 130px
+    z-index 3
+
+#header-menu-logo-rectangle
+    background-image url(../images/Shape1.png) center no-repeat url(../images/Shape3.png) center no-repeat
+    position absolute
+    left 50%
+    top 130px
+    z-index 2
+
+
+.main-menu
+    font 100 20px augustatwo
+    padding 30px 0px
+//    position absolute
+    &__item
+        cursor pointer
+        display inline-block
+        vertical-align middle
+        margin-right 5px
+        color: #f6edd8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ slider-section -----------------------*/
 .slider-section
     background-color main-color
     height 1827px
-    
+
  .slider-main-title
     background-color main-color
     text-transform uppercase
-    font-family SEASRN__, Arial       
+    font-family SEASRN__, Arial
     font-size 5.4em
     height 100px
     padding 50%
     margin 50% auto
     text-shadow 0 3px o white
     color white
-    
-    
-.about-section 
+
+/* ------------ about-section -----------------------*/
+.about-section
     background-color about-color
     height 1605px
-    
-.portfolio-section 
+/* ------------ portfolio-section -----------------------*/
+.portfolio-section
     background-color portfolio-color
     height 1696px
-    
-.blog-section 
+/* ------------ blog-section -----------------------*/
+.blog-section
     background-color blog-color
-    height 2104px   
-
-.contact-section 
+    height 2104px
+/* ------------ contact-section -----------------------*/
+.contact-section
     background-color contact-color
-    height 1646px 
+    height 1646px
+
+

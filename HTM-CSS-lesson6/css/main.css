@@ -18,28 +18,67 @@ body {
   src: url("../fonts/SEASRN__.ttf");
   font-weight: normal;
 }
-.lp-section {
-  width: 100%;
-}
-.content {
-  max-width: 1024px;
-  margin: 0 auto;
-}
+/* ------------ header-section -----------------------*/
 .header-section {
-  background-color: #79bbbb;
+  position: relative;
+  background: url("../images/HeaderBG.png");
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+  max-width: 2800px;
   height: 260px;
-  text-transform: uppercase;
-  font-family: augustatwo, Arial;
-  font-size: 2.4em;
 }
-.header-main-menu__item {
-  background-color: #79bbbb;
-  height: 260px;
-  text-transform: uppercase;
-  font-family: augustatwo, Arial;
-  font-size: 2.4em;
-  font-weight: bold;
+#menu-logo                  /*OK*/ {
+  position: absolute;
+  font-family: SEASRN__;
+  color: #f6edd8;
+  font-size: 188px;
+  left: 50%;
+  top: 130px;
+  z-index: 3;
 }
+#header-menu-logo-rectangle {
+  background-image: url("../images/Shape1.png") center no-repeat url("../images/Shape3.png") center no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  z-index: 2;
+}
+.header-main-menu-aboutMe {
+  position: absolute;
+  font-family: augustatwo;
+  color: #f6edd8;
+  font-size: 40px;
+  top: 120px;
+  left: 15%;
+  z-index: 2;
+}
+.header-main-menu-portfolio {
+  position: absolute;
+  font-family: augustatwo;
+  color: #f6edd8;
+  font-size: 40px;
+  top: 120px;
+  left: 35%;
+  z-index: 2;
+}
+.header-main-menu-myBlog {
+  position: absolute;
+  font-family: augustatwo;
+  color: #f6edd8;
+  font-size: 40px;
+  top: 120px;
+  left: 70%;
+  z-index: 2;
+}
+.header-main-menu-contactMe {
+  position: absolute;
+  font-family: augustatwo;
+  color: #f6edd8;
+  font-size: 40px;
+  top: 120px;
+  left: 90%;
+  z-index: 2;
+}
+/* ------------ slider-section -----------------------*/
 .slider-section {
   background-color: #79bbbb;
   height: 1827px;
@@ -55,18 +94,22 @@ body {
   text-shadow: 0 3px o #fff;
   color: #fff;
 }
+/* ------------ about-section -----------------------*/
 .about-section {
   background-color: #ddd8c8;
   height: 1605px;
 }
+/* ------------ portfolio-section -----------------------*/
 .portfolio-section {
   background-color: #e18a68;
   height: 1696px;
 }
+/* ------------ blog-section -----------------------*/
 .blog-section {
   background-color: #dad5c5;
   height: 2104px;
 }
+/* ------------ contact-section -----------------------*/
 .contact-section {
   background-color: #4c5055;
   height: 1646px;
